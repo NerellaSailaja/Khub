@@ -1,0 +1,62 @@
+/* Card Container */
+.card-container {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title Styling */
+  .page-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1890ff;
+    text-align: center;
+  }
+  
+  /* Responsive Search Bar */
+  .search-bar {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  /* Responsive Action Buttons */
+  .action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  /* Table Responsive Styling */
+  .ant-table {
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+  
+  /* Ensure Table Scrolls on Small Screens */
+  @media (max-width: 768px) {
+    .table-container {
+      overflow-x: auto;
+    }
+  
+    /* Reduce Button Size for Small Screens */
+    .action-buttons button {
+      padding: 4px 6px;
+      font-size: 12px;
+    }
+  }
+  
+  /* Center Elements on Extra Small Screens */
+  @media (max-width: 480px) {
+    .page-title {
+      font-size: 18px;
+    }
+  
+    .search-bar {
+      width: 100%;
+    }
+  
+    .action-buttons {
+      justify-content: center;
+    }
+  }

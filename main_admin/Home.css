@@ -1,0 +1,204 @@
+/* Main Admin CSS */
+/* Navbar Icons */
+.main-admin-css-navbar-icons .main-admin-css-icon {
+  font-size: 28px;
+  color: #06605a;
+  transition: transform 0.2s ease;
+}
+
+.main-admin-css-icon-link:hover .main-admin-css-icon {
+  transform: scale(1.2);
+}
+
+/* Page Layout */
+.main-admin-css-page {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+/* Sidebar */
+.main-admin-css-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #163020;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 0;
+}
+
+.main-admin-css-sidebar.closed {
+  width: 65px;
+}
+
+
+/* Logo */
+.main-admin-css-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin-top: 45px;
+  margin-right: 10px;
+}
+
+.main-admin-css-sidebar-logo {
+  width: 40px;
+  height: auto;
+}
+
+.main-admin-css-sidebar-logo-open {
+  width: 200px;
+  height: auto;
+}
+
+/* Toggle Button */
+.main-admin-css-toggle-btn {
+  background-color: #163020;
+  border: none;
+  color: #EEF0E5;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  z-index: 1100;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-admin-css-toggle-btn:hover {
+  background-color: #163020;
+  color: #B6C4B6;
+}
+
+/* Sidebar Navigation Menu */
+.main-admin-css-nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 250px;
+}
+
+.main-admin-css-nav-menu ul li {
+  margin-bottom: 10px;
+}
+
+/* Sidebar Links */
+.main-admin-css-link {
+  display: flex;
+  align-items: center;
+  color: #EEF0E5;
+  text-decoration: none;
+  padding: 15px 20px;
+  gap: 15px;
+  transition: color 0.3s ease;
+  justify-content: flex-start;
+}
+
+.main-admin-css-link:hover {
+  color: #B6C4B6;
+}
+
+.main-admin-css-icon {
+  font-size: 24px;
+  min-width: 24px;
+  color: #EEF0E5;
+  transition: color 0.3s ease;
+}
+
+.main-admin-css-link:hover .main-admin-css-icon {
+  color: #B6C4B6;
+}
+
+.main-admin-css-link span {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #EEF0E5;
+}
+
+/* Navbar */
+.main-admin-css-navbar {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: calc(100% - 55px);
+  height: 65px;
+  z-index: 1100;
+  transition: padding 0.3s ease;
+  box-shadow: 0 1px 0 rgba(22, 48, 32, 0.1), 
+              0 2px 0 rgba(22, 48, 32, 0.1),
+              0 3px 0 rgba(22, 48, 32, 0.1);
+   
+}
+
+/* When sidebar is expanded, shift navbar icons */
+.main-admin-css-sidebar.open + .main-admin-css-navbar .main-admin-css-navbar-icons {
+  margin-right: 180px; /* Move icons to the right */
+}
+
+.main-admin-css-navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  background-color: white;
+}
+
+/* Welcome Text - Responsive Font Size */
+.main-admin-css-welcome-text {
+  color: #163020;
+  font-size: clamp(15px, 4vw, 25px); /* Dynamically adjusts */
+}
+
+
+.main-admin-css-navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: margin-right 0.3s ease;
+}
+
+.main-admin-css-icon-link {
+  font-size: 28px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #06605a;
+}
+
+/* Main Content */
+.main-admin-css-content {
+  margin-top: 65px;
+  flex-grow: 1;
+  width: calc(100% - 250px);
+  transition: margin-left 0.3s ease, width 0.3s ease;
+}   
+
+@media (max-width: 768px) {
+  .main-admin-css-sidebar {
+    width: 65px;
+    align-items: center;  /* Aligns icons & logo in center */
+    justify-content: flex-start; /* Aligns items at the top */
+    gap: 100px;
+  }
+
+  .main-admin-css-link {
+    justify-content: center; /* Center the icon */
+    gap: 5px;
+  }
+
+  .main-admin-css-sidebar-logo {
+    width: 30px;
+  }
+}
+
+

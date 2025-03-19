@@ -1,0 +1,226 @@
+/* Profile Container */
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 30px;
+  background-color: #eef0e5;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+/* Profile Sidebar */
+.profile-sidebar {
+  width: 250px;
+  background-color: #304d30;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: #eef0e5;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-sidebar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #b6c4b6;
+}
+
+.profile-sidebar h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #b6c4b6;
+}
+
+.profile-sidebar p {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #eef0e5;
+}
+
+/* Profile Details */
+.profile-details {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #163020;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 15px;
+  border-color: #24a457;
+}
+
+.form-group .form-input {
+  width: 90%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: white;
+  color: #163020;
+  border: 2px solid #24a457; /* Green border */
+  transition: all 0.3s ease;
+}
+
+.form-group .form-input:focus {
+  outline: none;
+  border-color: #24823a; /* Darker green when focused */
+  box-shadow: 0 0 5px #4CAF50;
+}
+
+/* Buttons */
+.update-button {
+  background-color: #24823a; /* Primary green shade */
+  color: #eef0e5;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-button:hover {
+  background-color: #25903e; /* Slightly brighter green */
+  color: #163020;
+}
+
+.update-button:disabled {
+  background-color: #b6c4b6;
+  color: #eef0e5;
+  cursor: not-allowed;
+}
+
+.cancel-button {
+  background-color: #6c8e6e; /* Different green shade for cancel button */
+  color: #eef0e5;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: #8fb98b; /* Slightly brighter green */
+  color: #163020;
+}
+
+.cancel-button:disabled {
+  background-color: #b6c4b6;
+  color: #eef0e5;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .profile-sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .profile-details {
+    width: 100%;
+  }
+
+  .profile-sidebar img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-sidebar h3 {
+    font-size: 1.3rem;
+  }
+
+  .profile-sidebar p {
+    font-size: 0.8rem;
+  }
+
+  .profile-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-input,
+  .ant-input {
+    font-size: 0.9rem;
+  }
+
+  .update-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  .profile-sidebar {
+    padding: 15px;
+  }
+
+  .profile-sidebar img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .profile-sidebar h3 {
+    font-size: 1.2rem;
+  }
+
+  .profile-sidebar p {
+    font-size: 0.75rem;
+  }
+
+  .profile-details {
+    padding: 15px;
+  }
+
+  .profile-details h2 {
+    font-size: 1.3rem;
+  }
+
+  .form-input,
+  .ant-input {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+
+  .update-button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .cancel-button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}

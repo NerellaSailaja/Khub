@@ -1,0 +1,123 @@
+/* General card styling */
+.notification-card {
+    max-width: 600px;
+    margin: 24px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title styling */
+  .notification-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form container */
+  .notification-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Input and Select styling */
+  .notification-form .ant-form-item {
+    margin-bottom: 10px;
+  }
+  
+  .notification-form .ant-input,
+  .notification-form .ant-select-selector,
+  .notification-form .ant-input-textarea {
+    width: 100% !important;
+    padding: 12px !important;
+    border-radius: 8px !important;
+    border: 2px solid #218838 !important;
+    font-size: 15px !important;
+    background: rgba(240, 240, 240, 0.85) !important;
+    transition: all 0.3s ease !important;
+    color: #333 !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Focus styles for Select */
+.notification-form .ant-select-focused .ant-select-selector {
+  border-color: #28a745 !important;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.8) !important;
+  background: #fff !important;
+}
+  
+  /* Button styling */
+  .notification-button {
+    padding: 12px;
+    background-color: #24823a;
+    color: floralwhite;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .notification-button:hover {
+    background-color: #28a745;
+    transform: scale(1.02);
+  }
+  
+  .notification-button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .notification-card {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 20px;
+    }
+  
+    .notification-title {
+      font-size: 20px;
+    }
+  
+    .notification-form .ant-input,
+    .notification-form .ant-select-selector {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .notification-button {
+      font-size: 14px;
+      padding: 10px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .notification-card {
+      max-width: 95%;
+      margin: 20px auto;
+      padding: 15px;
+    }
+  
+    .notification-title {
+      font-size: 18px;
+    }
+  
+    .notification-form .ant-input,
+    .notification-form .ant-select-selector {
+      font-size: 13px;
+      padding: 10px;
+    }
+  
+    .notification-button {
+      font-size: 13px;
+      padding: 10px 0;
+    }
+  }
+  

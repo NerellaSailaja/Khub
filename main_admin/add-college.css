@@ -1,0 +1,130 @@
+/* General styling for the whole page */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Container for the form */
+.ac-container {
+  max-width: 500px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+/* Title styling */
+.ac-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form container */
+.ac-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ac-form
+/* Ant Design Input Customization */
+.ac-input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #f3f1f1;
+  color: #333;
+  border: 2px solid #28a745;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.ac-input:focus {
+  border-color: #163020 !important;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.8) !important; /* Green shadow */
+  outline: none;
+}
+
+.ac-input::placeholder {
+  color: #888;
+  font-size: 14px;
+}
+
+/* Submit button styling */
+.ac-button {
+  margin: 10px auto 0;
+  padding: 12px 18px;
+  background-color: #24823a;
+  color: floralwhite;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ac-button:hover {
+  background-color: #28a745;
+  transform: scale(1.02);
+}
+
+.ac-button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ac-container {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  .ac-title {
+    font-size: 20px;
+  }
+
+  .ac-input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .ac-button {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .ac-container {
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .ac-title {
+    font-size: 18px;
+  }
+
+  .ac-input {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .ac-button {
+    font-size: 13px;
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,247 @@
+/* AdminDashboard.css */
+
+/* General styles */
+.admin-dashboard {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f4f6f9;
+  border-radius: 12px;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #333;
+}
+
+/* Page title */
+.admin-dashboard h2 {
+  font-size: 28px;
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Delete selected button */
+.delete-selected-btn {
+  padding: 10px 20px;
+  background-color: #24823a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: block;
+  max-width: 200px;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.delete-selected-btn:hover {
+  background-color: #28a745;
+}
+
+.delete-selected-btn:active {
+  transform: scale(0.98);
+}
+
+/* Styling for the messages list */
+.messages-list {
+  margin-top: 20px;
+}
+
+.message-box {
+  background-color: white;
+  padding: 15px;
+  border: 2px solid #28a745;
+  border-radius: 8px;
+  border-left: 5px solid #388e3c;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.message-box:hover {
+  background-color: #f1f1f1;
+}
+
+.message-checkbox {
+  margin-right: 15px;
+}
+
+.message-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.message-body {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.message-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #777;
+  margin-top: 8px;
+}
+
+.message-date {
+  color: #777;
+}
+
+/* Button styling for delete action */
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  color: #304D30;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-btn:hover {
+  color: #163020;
+}
+
+/* Modal styling */
+.message-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 60%;
+  max-width: 600px;
+  position: relative;
+}
+
+.close-btn {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close-btn:hover {
+  color: #304D30;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-dashboard {
+      margin: 10px;
+      padding: 10px;
+  }
+
+  .admin-dashboard h2 {
+      font-size: 20px;
+  }
+
+  .delete-selected-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+
+  .message-box {
+      padding: 10px;
+  }
+
+  .message-name {
+      font-size: 14px;
+  }
+
+  .message-body {
+      font-size: 12px;
+  }
+
+  .message-footer {
+      font-size: 10px;
+  }
+
+  .modal-content {
+      width: 80%;
+      padding: 15px;
+  }
+
+  .close-btn {
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-dashboard {
+      margin: 5px;
+      padding: 5px;
+  }
+
+  .admin-dashboard h2 {
+      font-size: 18px;
+  }
+
+  .delete-selected-btn {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+
+  .message-box {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .message-checkbox {
+      margin-bottom: 10px;
+  }
+
+  .message-content {
+      width: 100%;
+  }
+
+  .message-name {
+      font-size: 12px;
+  }
+
+  .message-body {
+      font-size: 10px;
+  }
+
+  .message-footer {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .modal-content {
+      width: 90%;
+      padding: 10px;
+  }
+
+  .close-btn {
+      font-size: 16px;
+  }
+}
